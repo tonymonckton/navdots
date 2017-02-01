@@ -1,1 +1,41 @@
+#navDot		
+{
+	background-color:white;
+	position:fixed;
+	z-index:1000;
+	top:0px;
+	right:0px;
+}
 
+.dotList
+{
+	list-style-type: none;
+}
+
+.dotImg{
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+	background-image:url("../images/dotblack.png");
+    display:block;
+	width:30px;
+    height:30px;
+	border:0px solid black;
+	cursor:pointer;
+}
+.dotSectionTitle
+{
+	position:fixed; 
+	top:23px; 
+	right:50px;
+}
+
+.dotOn
+{
+	background-position: left 0px top 0px;
+}
+
+.dotOff
+{
+	background-position: left 0px top -30px;
+}
