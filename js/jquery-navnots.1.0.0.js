@@ -1,7 +1,7 @@
 /*
  * Nav Dots
  *
- * More info at 
+ * More info at https://github.com/tonymonckton/navdots
  *
  * Copyright (c) 2017, Tony Monckton
  *
