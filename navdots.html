@@ -16,37 +16,46 @@
 		#section1
 		{
 			width:100%;
-			height:500px;
+			height:800px;
+			background-color: #eeeeee;
 		}
 		#section2
 		{
 			width:100%;
-			height:500px;
+			height:800px;
 		}
 		#section3
 		{
 			width:100%;
-			height:500px;
+			height:800px;
+			background-color: #eeeeee;
 		}
 		</style>
 	</head>
 	<body>
-		<div id="navDot">
-			<div class="dotSectionTitle">SECTIONS</div>
+		<div id="navDots">
 			<ul class="dotList">
+				<li class="dotImg navUp" ></li>
 				<li class="dotImg dotOn" data-href="#section1" ></li>
 				<li class="dotImg dotOff" data-href="#section2" ></li>
 				<li class="dotImg dotOff" data-href="#section3" ></li>
+				<li class="dotImg navDown" ></li>
 			</ul>
 		</div>
-		<section id="section1">section 1...</section>
-		<section id="section2">section 2...</section>
-		<section id="section3">section 3...</section>
+		<section class="navSection" id="section1">section 1...</section>
+		<section class="navSection" id="section2">section 2...</section>
+		<section class="navSection" id="section3">section 3...</section>
 
 <script type="text/javascript">
 	jQuery(document).ready(function()
 	{
-		$('.dotList li').NavDots({duration:500});	
+		var $navDots = $('.dotList li').NavDots({align:'center', duration:500});
+		
+		$navDots.reSizeMe();
+		
+		$( window ).resize(function() {
+			$navDots.reSizeMe();
+		});
 	});	
 </script>
 	</body>

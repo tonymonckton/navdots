@@ -1,10 +1,11 @@
-#navDot		
+#navDots		
 {
-	background-color:white;
+	background-color:clear;
 	position:fixed;
 	z-index:1000;
 	top:0px;
 	right:0px;
+	padding-top:0px;
 }
 
 .dotList
@@ -16,11 +17,11 @@
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
-	background-image:url("../images/dotblack.png");
+	background-image:url("../images/bluenav.png");
     display:block;
 	width:30px;
     height:30px;
-	border:0px solid black;
+	border:0px;
 	cursor:pointer;
 }
 .dotSectionTitle
@@ -38,4 +39,14 @@
 .dotOff
 {
 	background-position: left 0px top -30px;
+}
+
+.navDown
+{
+	background-position: left 0px top -60px;
+}
+
+.navUp
+{
+	background-position: left 0px top -90px;
 }
